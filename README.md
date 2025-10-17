@@ -1,73 +1,47 @@
-# Actividad Práctica 1 - Data Science 1 (Coderhouse)
-
-**Alumno:** Tobias Villarruel  
-**Curso:** Data Science 1 - Coderhouse  
-
----
-
-## 🎯 Objetivo
-La presente actividad tiene como propósito identificar **tres datasets** que cumplan con las siguientes condiciones:
-- Al menos **2000 filas**
-- Al menos **15 columnas**
-
-Cada dataset se carga mediante la librería **Pandas** y se realiza una breve descripción de las **variables potencialmente interesantes**, considerando el contexto del caso.
-
----
-
-## 🗂️ Estructura del repositorio
-coderhouse-ds1-proyecto-final/
-│
-├── 📄 Actividad_Practica_1_Villarruel_FINAL.ipynb ← Notebook principal con el análisis
-│
-└── 📁 data/
-└── 📁 raw/
-├── WDIData.csv
-├── air_quality.csv
-└── Global_Development_2000_2020.csv
-
-yaml
-Copy code
-
----
-
-## 📊 Datasets utilizados
-
-| Nº | Dataset | Fuente | Filas | Columnas | Descripción |
-|----|----------|---------|--------|-----------|--------------|
-| 1 | **World Development Indicators (Argentina)** | [World Bank Open Data](https://databank.worldbank.org/source/world-development-indicators) | +2000 | +60 | Indicadores económicos, sociales y de desarrollo del Banco Mundial. Se filtraron los datos correspondientes únicamente a Argentina, conservando la estructura y volumen necesarios. |
-| 2 | **Air Quality (UCI)** | [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Air+Quality) | 9357 | 15 | Mediciones de gases contaminantes, temperatura y humedad registradas por una estación ambiental en Italia. |
-| 3 | **Global Development Indicators (2000–2020)** | [Kaggle Dataset](https://www.kaggle.com/datasets/michaelmatta0/global-development-indicators-2000-2020) | +4000 | +20 | Indicadores económicos, sociales y ambientales globales correspondientes al período 2000–2020. |
-
----
-
-## ⚙️ Librerías utilizadas
-- **pandas**
-- **numpy**
-- **matplotlib**
-- **seaborn**
-- **pathlib**
-
----
-
-## 🧠 Resultados y observaciones
-- Todos los datasets cumplen con los requisitos de la consigna.  
-- Se verificaron correctamente los tamaños mínimos (≥2000 filas y ≥15 columnas).  
-- Las variables seleccionadas permiten distintos tipos de análisis exploratorio:  
-  - **WDI (Argentina):** evolución histórica de indicadores económicos y sociales.  
-  - **Air Quality:** relación entre variables ambientales y contaminantes.  
-  - **Global Dev:** correlaciones entre desarrollo humano y crecimiento económico.
-
----
-
-## ✅ Checklist de la consigna
-- [x] 3 datasets seleccionados.  
-- [x] Todos cumplen con los requisitos mínimos.  
-- [x] Carga mediante librería Pandas.  
-- [x] Descripción de variables relevantes.  
-- [x] Notebook funcional y probado.  
-- [x] Proyecto subido correctamente a GitHub.
-
----
-
-## 📎 Enlace al repositorio
-> *https://github.com/tobyvillarruelsoto-droid/Data-Science-1*
+■ Proyecto Final – Data Science 1
+(Coderhouse)
+Análisis de la calidad del aire y factores asociados (Air Quality
+Dataset)
+Autor: Tobias Villarruel
+Profesor: Ignacio Russo Locati
+Comisión: 90640
+Fecha: Octubre 2025
+■ Descripción general
+Este proyecto forma parte del curso Data Science 1 de Coderhouse y tiene como objetivo aplicar
+el proceso completo de análisis de datos, desde la adquisición y exploración de datasets hasta la
+construcción de modelos predictivos simples. El trabajo se desarrolló utilizando tres fuentes de
+datos, pero el proyecto final se centra específicamente en el dataset de Air Quality (UCI Machine
+Learning Repository).
+■ Objetivos del proyecto
+• Explorar y analizar datos provenientes de fuentes abiertas.
+• Identificar relaciones entre variables meteorológicas y químicas relacionadas con la
+contaminación del aire.
+• Aplicar técnicas de visualización y análisis exploratorio (EDA).
+• Construir un modelo predictivo simple que estime el nivel de monóxido de carbono (CO).
+• Evaluar el modelo mediante métricas estándar y elaborar conclusiones basadas en los
+resultados.
+■ Dataset principal: Air Quality (UCI)
+El dataset Air Quality contiene mediciones horarias de contaminantes atmosféricos (CO, NOx,
+NO■, O■, etc.) y variables meteorológicas (temperatura, humedad, presión). El periodo de
+recolección abarca de marzo 2004 a abril 2005 en una zona urbana de Italia.
+■ Análisis exploratorio (EDA)
+Se observaron correlaciones moderadas entre la temperatura y los niveles de CO(GT),
+comportamientos cíclicos diarios en los contaminantes y patrones de dispersión amplios. Se
+imputaron valores faltantes con la media y se trabajó con variables numéricas transformadas para
+garantizar consistencia.
+■ Modelado y métricas
+Métrica Valor Interpretación
+MAE 58.4 Error medio absoluto
+RMSE 76.3 Desviación media del modelo
+R² 0.015 Explica un 1.5% de la varianza
+■ Conclusiones
+Se completó el proceso de Data Science de punta a punta: adquisición, limpieza, análisis,
+modelado y evaluación. El modelo confirma que la contaminación atmosférica es un fenómeno
+complejo, no lineal y multidimensional. A pesar de su capacidad predictiva limitada, permitió
+comprender la dirección y magnitud de las variables.
+■ Tecnologías utilizadas
+Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Google Colab, GitHub.
+■ Repositorio: https://github.com/tobyvillarruelsoto-droid/Data-Science-1
+■ Entrega final – Data Science 1 (Coderhouse)
+Este documento resume todas las etapas del proyecto final, integrando las actividades prácticas y
+el modelo predictivo desarrollado por Tobias Villarruel para la Comisión 90640.
